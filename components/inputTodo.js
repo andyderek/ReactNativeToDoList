@@ -16,7 +16,9 @@ export default function InputTodo({addTodo, clearText}) {
         placeHolder={'Add to your list'}
         onSubmitEditing={ () => {addTodo(text); setText('')} }
         onChangeText={inputChange}
-        defaultValue={ text }/>
+        defaultValue={ text }
+        clearTextOnFocus={true}
+        clearButtonMode={"always"}/>
   );
 }
 
@@ -27,5 +29,7 @@ const style = StyleSheet.create({
         margin: 20,
         borderWidth: 1,
         borderColor: 'black',
+        backgroundColor: 'rgba(0, 0, 0, .1)',
+        color: 'white',
     }
 })

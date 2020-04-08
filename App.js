@@ -5,9 +5,9 @@ import Header from './components/header.js';
 import InputTodo from './components/inputTodo.js'
 
 export default function App() {
+
   const [todos, setTodos] = useState([
-    { text: 'Hello Item', key: '1'},
-    { text: 'Item 2', key: '2' }
+    { text: '', key: '1'}
   ])
 
   const removeItem = (key) => {
